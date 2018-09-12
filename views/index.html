@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Save fcc Certificate</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="body">  
+
+      <header>
+          <h1>Save a freeCodeCamp Certificate as an Image or PDF.</h1>
+      </header> 
+      
+      <form id="form">
+          <div>
+              <label for="url">Enter the freeCodeCamp Certicate URL in the input box below.</label><br />
+              <input id="url-input" name="url" type="text" placeholder="Enter freeCodeCamp Certificate URL"><br />
+              <button type="submit">Submit</button>
+              <div id="not-valid-div"></div>  
+          </div>
+      </form>
+      <footer>
+          <p>Code by <a href="http://seanmurphy.eu" target="_blank" rel="noopener noreferrer">Sean Murphy</a></p>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+      <script>
+        $(function () {
+			$('#form').submit(function (e) {
+				$.ajax({
+					url: '/validate',
+					type: 'post',
+					data: $('#form').serialize(),
+					success: function (data) {
+                        $('#not-valid-div').text(JSON.stringify(data));
+                        if (data != "You have not entered a valid URL") {
+                            redirectToCert();
+                        }
+					}
+				});
+				e.preventDefault();
+			});
+        });
+        function redirectToCert() {
+            window.location.href = '/certificate';
+        }
+      </script>
+  </body>
+</html>

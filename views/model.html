@@ -1,0 +1,27 @@
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/certstyle.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/download.js"></script>
+
+    <div id="content" data-html2canvas-ignore>
+        <header>
+            <h1>Save a freeCodeCamp Certificate as an Image or PDF.</h1>
+        </header>
+        <form id="form">
+            <div>
+                <p id="infoMessage">Success, this is a valid certificate.</p>  
+                <label for="option">How do you want to save your certificate</label>
+                <input class="radioButtons" name="option" type="radio" value="image">Image</input>
+                <input class="radioButtons" name="option" type="radio" value="pdf">PDF</input>
+            </div>
+            <button id="downloadButton" onclick="downloadCertificate()" type="button">Download</button>
+        </form>
+        <a id="captureCert" data-html2canvas-ignore></a>
+    </div>
+
+    
+    

@@ -1,0 +1,27 @@
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/certstyle.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/download.js"></script>
+
+    <div id="content" data-html2canvas-ignore>
+        <header>
+            <h1>Save a freeCodeCamp Certificate as an Image or PDF.</h1>
+        </header>
+        <form id="form">
+            <div>
+                <p id="infoMessage">Success, this is a valid certificate.</p>  
+                <label for="option">How do you want to save your certificate</label>
+                <input class="radioButtons" name="option" type="radio" value="image">Image</input>
+                <input class="radioButtons" name="option" type="radio" value="pdf">PDF</input>
+            </div>
+            <button id="downloadButton" onclick="downloadCertificate()" type="button">Download</button>
+        </form>
+        <a id="captureCert" data-html2canvas-ignore></a>
+    </div>
+
+    
+    <div class="certificate-wrapper container"><div class="row"><header><div class="col-md-5 col-sm-12"><div class="logo"><img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="freeCodeCamp's Logo" class="img-responsive"/></div></div><div class="col-md-7 col-sm-12"><div class="issue-date">Issued&nbsp;<strong>September 12, 2018</strong></div></div></header><section class="information"><div class="information-container"><h3>This certifies that</h3><h1><strong>Sean Murphy</strong></h1><h3>has successfully completed freeCodeCamp's</h3><h1><strong>Full Stack</strong></h1><h4>Developer Certification, representing approximately 1800 hours of coursework</h4></div></section><footer><div class="row signatures"><img src="https://i.imgur.com/OJFVJKg.png" alt="Quincy Larson's Signature" class="img-responsive"/><p><strong>Quincy Larson</strong></p><p>Executive Director, freeCodeCamp.org</p></div><div class="row"><p class="verify">Verify this certification at: https://www.freecodecamp.org/certification/nazarja/full-stack</p></div></footer></div></div>

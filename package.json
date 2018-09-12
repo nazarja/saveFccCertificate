@@ -1,0 +1,34 @@
+{
+  "name": "savefcccertificate",
+  "version": "1.0.0",
+  "description": "Save a freeCodeCamp Certificate as an Image or PDF.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nazarja/saveFccCertificate.git"
+  },
+  "keywords": [
+    "freeCodeCamp",
+    "Node",
+    "Certificate",
+    "PDF"
+  ],
+  "author": "Sean Murphy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nazarja/saveFccCertificate/issues"
+  },
+  "homepage": "https://github.com/nazarja/saveFccCertificate#readme",
+  "engines": {
+    "node": "8.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "html2canvas": "^1.0.0-alpha.12",
+    "request": "^2.88.0"
+  }
+}

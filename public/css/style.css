@@ -1,0 +1,106 @@
+
+/*********** Fonts  **********/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+    font-family: "Sax Mono";
+    src: url("/fonts/saxmono.ttf") format("truetype");
+}
+
+/**********  General  **********/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #EFEFEF;
+}
+
+header {
+    background-color: #006400;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    font-family: "Sax Mono", monospace; 
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    bottom: -80px;
+}  
+
+footer a {
+    color: #006400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #111;
+}
+
+/*********** Not Valid Div **********/
+#not-valid-div {
+    height: 30px;
+    margin-top: 25px;
+    color: red;
+}
+
+/*********** Input Area **********/
+form {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+input[type='text'] {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #111;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    color: #000;
+}
+
+button[type='submit'] {
+    background-color: #006400;
+    color: #fff;
+    border: 1px solid #006400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type='submit']:hover {
+    background-color: #fff;
+    color: #006400;
+    border: 1px solid #006400;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #000;
+  }
