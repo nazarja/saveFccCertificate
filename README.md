@@ -1,2 +1,2 @@
 # saveFccCertificate
-Save a freeCodeCamp Certificate as an Image, PDF or Print.
+Save a freeCodeCamp Certificate as an Image or PDF.
